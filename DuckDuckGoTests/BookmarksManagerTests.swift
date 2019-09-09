@@ -153,7 +153,7 @@ class BookmarksManagerTests: XCTestCase {
     func testWhenBookmarkSavedThenBookmarkAddedToStore() {
         manager.save(bookmark: Constants.exampleLink)
         XCTAssertEqual(1, mockStore.addedBookmarks.count)
-        XCTAssertEqual(Constants.exampleTitle, mockStore.addedBookmarks[0].title)
+        XCTAssertEqual(Constants.exampleUrl, mockStore.addedBookmarks[0].title)
         XCTAssertEqual(Constants.exampleUrl, mockStore.addedBookmarks[0].url)
     }
     
