@@ -58,7 +58,7 @@ class AppRatingPromptTests: XCTestCase {
 
         appRatingPrompt.registerUsage(onDate: Date().inDays(fromNow: 7))
 
-        XCTAssertTrue(appRatingPrompt.shouldPrompt(onDate: Date().inDays(fromNow: 7)))
+        XCTAssertFalse(appRatingPrompt.shouldPrompt(onDate: Date().inDays(fromNow: 7)))
         
     }
 
