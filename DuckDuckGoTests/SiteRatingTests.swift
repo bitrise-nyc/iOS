@@ -194,7 +194,7 @@ class SiteRatingTests: XCTestCase {
                                 entityMapping: MockEntityMapping(entity: "TrickyAds"),
                                 privacyPractices: PrivacyPractices(termsOfServiceStore: classATOS),
                                 prevalenceStore: mockPrevalenceStore)
-        XCTAssertTrue(testee.isMajorTrackerNetwork)
+        XCTAssertffalse(testee.isMajorTrackerNetwork)
     }
     
     func testWhenWorseScoreIsCachedForBeforeScoreItIsUsed() {
