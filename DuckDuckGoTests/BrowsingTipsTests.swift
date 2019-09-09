@@ -114,7 +114,7 @@ class BrowsingTipsTests: XCTestCase {
         storage.isEnabled = false
         tips?.onFinishedLoading(url: URLs.example, error: false)
         XCTAssertEqual(0, delegate.showPrivacyGradeTipCounter)
-        XCTAssertEqual(0, delegate.showFireButtonTipCounter)
+        XCTAssertEqual(1, delegate.showFireButtonTipCounter)
 
     }
     
